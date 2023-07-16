@@ -58,6 +58,8 @@ git push origin master
 
 Este es un ejemplo de cómo debería verse la aplicación:
 
+![example](./assets/Navigation.GIF)
+
 ## Instructions
 
 ### Iteration 1: Instalar Stack Navigator
@@ -84,7 +86,6 @@ Este es un ejemplo de cómo debería verse la aplicación:
 
 - Crear una pantalla principal.
 - Crear una pantalla de perfil.
-- Crear una pantalla de ajustes.
 - Crear una pantalla de integrantes del equipo.
 - Añadir las pantallas al Stack Navigator.
 
