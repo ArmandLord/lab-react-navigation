@@ -8,22 +8,22 @@ This exercise allows you to practice and apply the concepts and techniques taugh
 
 Upon completion of this exercise, you will be able to:
 
-- Utilizar los componentes básicos de React Native.
-- Crear estilos personalizados con StyleSheet.
-- Manejar la navegación entre pantallas con React Navigation.
-- Utilizar el Stack Navigator para definir las pantallas de nuestra aplicación.
-- Pasar data entre pantallas.
-- Utilizar TypeScript para tipar las diferentes pantallas de nuestra aplicación.
+- Use basic React Native components.
+- Create custom styles with StyleSheet.
+- Handle screen navigation with React Navigation.
+- Utilize the Stack Navigator to define the screens of our application.
+- Pass data between screens.
+- Use TypeScript to type the different screens of our application.
 
 ## Introduction
 
-En este ejercicio vamos a crear un stack navigator con React Navigation que nos permita navegar entre 3 pantallas: una pantalla principal, una pantalla perfil y una pantalla de integrantes del equipo. En la pantalla principal vamos a crear un menú con diferentes botones que nos permitan navegar a las diferentes pantallas de nuestra aplicación. En la pantalla de perfil vamos a mostrar la información de un usuario. En la pantalla de ajustes vamos a mostrar un formulario que nos permita editar la información del usuario. En la pantalla de integrantes del equipo vamos a mostrar una lista de los integrantes del equipo.
+In this exercise, we will create a stack navigator with React Navigation that allows us to navigate between 3 screens: a home screen, a profile screen, and a team members screen. On the home screen, we will create a menu with different buttons that enable us to navigate to the various screens of our application. On the profile screen, we will display user information. On the settings screen, we will show a form that allows us to edit the user's information. On the team members screen, we will display a list of team members.
 
 ## Requirements
 
 - Fork this repo.
 - Clone this repo.
-- Ejecutar `nvm use` para utilizar la versión de Node que se indica en el fichero `.nvmrc`.
+- Run `nvm use` to use the node version specified into the `.nvmrc` file.
 
 ```bash
 nvm use
@@ -56,61 +56,61 @@ git push origin master
 
 ## Example
 
-Este es un ejemplo de cómo debería verse la aplicación:
+This is how the app should looks like:
 
 ![example](./assets/Navigation.GIF)
 
 ## Instructions
 
-### Iteration 1: Instalar Stack Navigator
+### Iteration 1: Install Stack Navigator
 
-- Instalar React Navigation y sus dependencias.
-- Instalar Stack Navigator.
+- Install React Navigation and its dependencies.
+- Install Stack Navigator.
 
-### Iteration 2: Crear las carpetas y ficheros necesarios
+### Iteration 2: Create the necessary folders and files
 
-- Crear una carpeta `src` en la raíz del proyecto.
-- Crear una carpeta `screens` dentro de la carpeta `src`.
-- Crear una carpeta `components` dentro de la carpeta `src`.
-- Crear una carpeta `navigation` dentro de la carpeta `src`.
+- Create a folder named `src` in the project's root directory.
+- Create a folder named `screens` inside the `src` folder.
+- Create a folder named `components` inside the `src` folder.
+- Create a folder named `navigation` inside the `src` folder.
 
-### Iteration 3: Utilizar NavigationContainer y crear el Stack Navigator
+### Iteration 3: Use NavigationContainer and create the Stack Navigator
 
-- Importar `NavigationContainer` desde `@react-navigation/native`.
-- Importar `createStackNavigator` desde `@react-navigation/stack`.
-- Crear la estructura del Stack Navigator.
-- Utilizar `NavigationContainer` para envolver el Stack Navigator.
-- Utilizar `createStackNavigator` para crear el Stack Navigator.
+- Import `NavigationContainer` from `@react-navigation/native`.
+- Import `createStackNavigator` from `@react-navigation/stack`.
+- Set up the structure of the Stack Navigator.
+- Use `NavigationContainer` to wrap the Stack Navigator.
+- Use `createStackNavigator` to create the Stack Navigator.
 
-### Iteration 4: Crear las pantallas de la aplicación y añadirlas al Stack Navigator
+### Iteration 4: Create the application screens and add them to the Stack Navigator
 
-- Crear una pantalla principal.
-- Crear una pantalla de perfil.
-- Crear una pantalla de integrantes del equipo.
-- Añadir las pantallas al Stack Navigator.
+- Create a home screen.
+- Create a profile screen.
+- Create a team members screen.
+- Add the screens to the Stack Navigator.
 
-### Iteration 5: Crear el menú de la pantalla principal
+### Iteration 5: Create the menu for the home screen
 
-- Crear un menú con diferentes botones que nos permitan navegar a las diferentes pantallas de nuestra aplicación.
+- Create a menu with different buttons that allow us to navigate to the various screens of our application.
 
-### Iteration 6: Crear la pantalla de perfil
+### Iteration 6: Create the profile screen
 
-- Crear una pantalla de perfil que muestre la información de un usuario.
-- Esta pantalla debe recibir la información del usuario como props. Esta información debe ser un objeto con las siguientes propiedades: `name`, `lastName`, `email`, `phone`, `avatar`.
-- Esta pantalla debe mostrar la información del usuario, puedes crear un componente `UserCard` que muestre la información del usuario.
-- Esta pantalla debe tener un botón que nos permita navegar a la pantalla principal.
+- Create a profile screen that displays user information.
+- This screen should receive user information as props. The information should be an object with the following properties: `name`, `lastName`, `email`, `phone`, `avatar`.
+- This screen should display the user information; you can create a `UserCard` component to show the user's information.
+- This screen should have a button that allows us to navigate to the home screen.
 
-### Iteration 7: Crear la pantalla integrantes del equipo
+### Iteration 7: Create the team members screen
 
-- Crear una pantalla de integrantes del equipo que muestre una lista de los integrantes del equipo.
-- Esta pantalla debe recibir la información de los integrantes del equipo como props. Esta información debe ser un array de objetos con las siguientes propiedades: `name`, `lastName`, `email`, `phone`, `avatar`.
-- Esta pantalla debe mostrar la información de los integrantes del equipo, puedes crear un componente `UserCard` que muestre la información de un integrante del equipo.
-- Esta pantalla debe tener un botón que nos permita navegar a la pantalla principal.
+- Create a team members screen that displays a list of team members.
+- This screen should receive team members' information as props. The information should be an array of objects with the following properties: `name`, `lastName`, `email`, `phone`, `avatar`.
+- This screen should display the team members' information; you can create a `UserCard` component to show the information of a team member.
+- This screen should have a button that allows us to navigate to the home screen.
 
 ### Bonus Iteration:
 
-- Crea la interface del `createStackNavigator` para tipar las pantallas de nuestra aplicación.
+- Create the interface for `createStackNavigator` to type the screens of our application.
 
-- Crea la interface del `UserCard` para tipar el componente `UserCard`.
+- Create the interface for `UserCard` to type the `UserCard` component.
 
 Happy coding! 💙
